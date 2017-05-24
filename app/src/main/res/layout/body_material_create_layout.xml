@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/body_material_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:text="辅料添加"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="名称：" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/body_material_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="数量：" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/body_material_text"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:text="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

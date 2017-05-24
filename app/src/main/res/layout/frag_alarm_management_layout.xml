@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lf.tempcore.tempViews.tempRecyclerView.TempRefreshRecyclerView
+        android:id="@+id/frag_alarm_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+    </com.lf.tempcore.tempViews.tempRecyclerView.TempRefreshRecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/frag_alarm_select_all_frame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/frag_alarm_select_all_image"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginLeft="35px"
+                android:layout_marginRight="16px"
+                android:src="@mipmap/icon_unchecked_l" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/frag_alarm_off_btn"
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:background="#E56993"
+            android:gravity="center"
+            android:text="关闭报警"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/frag_alarm_on_btn"
+            android:layout_width="180px"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="启动报警"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

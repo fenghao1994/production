@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="装箱信息"
+                android:textColor="@color/text_color_gray" />
+
+
+            <TextView
+android:id="@+id/textV_index0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                tools:text="箱子编号:" />
+
+            <TextView
+                android:id="@+id/textV_index1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                tools:text="产品批次:" />
+
+            <TextView
+                android:id="@+id/textV_index2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                tools:text="数量:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="产品列表"
+                android:textColor="@color/text_color_gray" />
+
+            <com.qdxy.app.lhjh.views.TempMyListView
+                android:id="@+id/act_prd_check_self_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.qdxy.app.lhjh.views.TempMyListView>
+
+            <LinearLayout
+                android:id="@+id/act_prd_check_random_operation_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_prd_check_commit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="120px"
+                    android:background="@drawable/selector_button_primary"
+                    android:gravity="center"
+                    android:text="提 交"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

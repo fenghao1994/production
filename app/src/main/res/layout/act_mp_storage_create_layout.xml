@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="型号:" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/storage_spinner_index0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="厂家:" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/storage_spinner_index1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="数量:" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/storage_editText_index2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:digits="0123456789"
+            android:layout_marginRight="16dp"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/storage_commit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="120px"
+        android:background="@drawable/selector_button_primary"
+        android:text="申请入库"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

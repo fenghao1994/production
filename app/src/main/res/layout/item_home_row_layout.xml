@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="19dp"
+        >
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_home_group_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:text="库房管理" />
+
+
+    </LinearLayout>
+
+    <com.lf.tempcore.tempViews.TempNestingGridView
+        android:id="@+id/item_home_chile_gridView"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:numColumns="3"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+    </com.lf.tempcore.tempViews.TempNestingGridView>
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#dbdbdb"/>-->
+</LinearLayout>

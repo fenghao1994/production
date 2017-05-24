@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/body_items_toolView"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/body_items_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dbdbdb"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="领用列表"
+        android:textColor="@color/text_color_gray" />
+
+
+    <com.qdxy.app.lhjh.views.TempMyListView
+        android:id="@+id/body_items_tempMyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.qdxy.app.lhjh.views.TempMyListView>
+</LinearLayout>

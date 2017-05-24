@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lf.tempcore.tempViews.tempPullableViews.PullToRefreshLayout
+        android:id="@+id/jiagong2_PullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <com.qdxy.app.lhjh.views.CustomExpandListview
+            android:id="@+id/jiagong2_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </com.qdxy.app.lhjh.views.CustomExpandListview>
+    </com.lf.tempcore.tempViews.tempPullableViews.PullToRefreshLayout>
+
+    <include
+        layout="@layout/body_operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+
+        />
+</LinearLayout>

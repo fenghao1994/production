@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <com.lf.tempcore.tempViews.tempRecyclerView.TempRefreshRecyclerView
+            android:id="@+id/act_apply_prd_receiverView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.lf.tempcore.tempViews.tempRecyclerView.TempRefreshRecyclerView>
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/prd_inbox_commit_btn"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/selector_button_primary"
+        android:text="提交入库申请"
+        android:textColor="@color/white"
+        android:textSize="18sp">
+
+    </android.support.v7.widget.AppCompatButton>
+</LinearLayout>

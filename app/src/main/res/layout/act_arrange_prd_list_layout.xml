@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout"/>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.lf.tempcore.tempViews.tempRecyclerView.TempRefreshRecyclerView
+            android:id="@+id/act_arrange_pro_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </com.lf.tempcore.tempViews.tempRecyclerView.TempRefreshRecyclerView>
+      <!--  <com.lf.tempcore.tempViews.tempPullableViews.PullToRefreshLayout
+            android:id="@+id/act_arrange_pro_list_PullToRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.qdxy.app.lhjh.views.CustomExpandListview
+                android:id="@+id/act_arrange_pro_list_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+            </com.qdxy.app.lhjh.views.CustomExpandListview>
+        </com.lf.tempcore.tempViews.tempPullableViews.PullToRefreshLayout>-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/act_arrange_pro_list__fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_add"
+            app:backgroundTint="@color/colorAccent"
+            app:borderWidth="0dp" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

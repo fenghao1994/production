@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="temp_transparent">#00000000</color>
+    <!-- app主题颜色配置-->
+    <color name="theme_background">#ECECEC</color>
+    <color name="theme_background_inverse">#212121</color>
+
+    <color name="theme_accent_1">#212121</color>
+
+    <color name="theme_primary_trans">#99212121</color>
+
+    <color name="theme_primary_text">#212121</color>
+    <color name="theme_secondary_text">#727272</color>
+    <color name="theme_primary_text_inverted">#ffffff</color>
+    <color name="theme_secondary_text_inverted">#8affffff</color>
+    <color name="theme_icons">#FFFFFF</color>
+    <color name="theme_divider">#B6B6B6</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <color name="temp_colorPrimary">#164E87</color>
+    <color name="temp_colorPrimaryDark">#123887</color>
+    <color name="temp_actionbarColor">#27AC39</color>
+    <color name="temp_baseTextColor_AAAAAA">#AAAAAA</color>
+    <color name="temp_baseTextColor_272727">#272727</color>
+    <color name="temp_baseTextColor_565656">#565656</color>
+    <color name="temp_baseLineColor_e5e5e5">#e5e5e5</color>
+    <color name="temp_base_color_transparent">#00000000</color>
+    <color name="temp_base_color_half_transparent_white">#4fffffff</color>
+    <color name="temp_base_color_half_transparent_black">#5f000000</color>
+
+    <color name="temp_pink_color">#FF4000</color>
+
+    <!-- pulltorefreshView color-->
+    <color name="temp_white">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="temp_black">#000000</color>
+    <color name="temp_gray">#AAAA</color>
+
+    <color name="temp_colorAccent">#2d5481</color>
+
+    <color name="temp_white_color">#FFFFFF</color>
+
+    <!--dialog-->
+    <color name="temp_dialog_positive_button_bg">#FF900A</color>
+    <color name="temp_dialog_negative_button_bg">#ECECEC</color>
+
+    <color name="color_FF6D00">#FF6D00</color>
+    <color name="color_ffeed5">#ffeed5</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+
+    <!-- pulltorefreshView color-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#AAAA</color>
+
+
+
+</resources>

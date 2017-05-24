@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/act_apply_prd_detail_rootView"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/toolbar_layout"/>
+    <include layout="@layout/body_material_items_layout" />
+
+    <include layout="@layout/body_material_results_layout" />
+    <!--<include layout="@layout/body_commit_btn_layout"/>-->
+    <!--<include layout="@layout/body_commit_btn_2_layout"/>-->
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_marginTop="1dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="产品号："/>
+
+    <TextView
+        android:id="@+id/item_inbox_detail_productCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="wd12101110122"/>
+
+</LinearLayout>

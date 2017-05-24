@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/act_create_pici_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="箱子编号:" />
+
+        <EditText
+            android:id="@+id/dialog_create_product_box_index0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_button_selector"
+            android:gravity="center_vertical"
+            android:hint="请输入箱子编号"
+            android:inputType="text"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColorHint="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="产品批次:" />
+
+        <TextView
+            android:id="@+id/dialog_create_product_box_index1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_button_selector"
+            android:gravity="center_vertical"
+            android:hint="请选择产品批次"
+            android:inputType="text"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColorHint="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="箱子容量:" />
+
+        <EditText
+            android:id="@+id/dialog_create_product_box_index2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_button_selector"
+            android:gravity="center_vertical"
+            android:hint="请输入箱子容量"
+            android:inputType="number"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColorHint="@color/gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_create_product_box_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="120px"
+        android:background="@drawable/selector_button_primary"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

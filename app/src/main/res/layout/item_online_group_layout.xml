@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/item_online_group_status_image"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_unchecked_l" />
+
+        <TextView
+            android:id="@+id/item_online_group_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/black"
+            tools:text="工序" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_jia_group_divider"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#EEEFF3"
+        android:visibility="gone" />
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb" />-->
+</LinearLayout>

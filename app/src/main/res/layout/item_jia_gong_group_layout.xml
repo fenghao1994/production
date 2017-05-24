@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/item_jia_gong_divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#EEEFF3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/item_jia_gong_gongxu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:text="加工工序" />
+
+        <ImageView
+            android:id="@+id/item_jia_gong_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_alarm" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb"
+        />
+    <!--android:layout_marginBottom="16dp"-->
+</LinearLayout>

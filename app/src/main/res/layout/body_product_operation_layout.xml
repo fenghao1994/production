@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:padding="16dp"
+             android:text="投料"
+             android:textColor="@color/black"
+             android:textSize="20sp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前批次：" />
+
+            <!--<TextView
+                android:id="@+id/frag_touliao_pici_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="wd12060909" />-->
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/act_production2_sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_shearch_btn_bg"
+                android:text="操作"
+                android:textColor="@color/colorPrimary"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前工序：" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/act_production2_sp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="40dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:id="@+id/act_production2_alarm_btn"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_shearch_btn_bg"
+                    android:text="报警"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品编号：" />
+
+            <EditText
+                android:id="@+id/act_production2_edit_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                tools:text="101" />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="40dp">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_createNum_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_shearch_btn_bg"
+                    android:text="创建"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注信息：" />
+
+            <EditText
+                android:id="@+id/act_production2_btn_remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入备注信息"
+                 />
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_button_primary"
+                android:text="投料"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_btn_feeding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/selector_button_primary"
+                    android:text="投料"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_btn_selfCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/selector_button_primary"
+                    android:text="自检"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_btn_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/selector_button_primary"
+                    android:text="加工完成"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_btn_sendCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/selector_button_primary"
+                    android:text="送检"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_btn_sendRepair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/selector_button_primary"
+                    android:text="送修"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:textColor="@color/white" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/act_production2_btn_checkComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/selector_button_primary"
+                    android:text="检测"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="20dp"
+         android:background="#dbdbdb"/>-->
+</LinearLayout>
