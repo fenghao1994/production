@@ -26,7 +26,7 @@ import java.util.List;
  * Created by mac on 2016/12/26.
  */
 
-class ActProductionOffline extends TempActivity{
+public class ActProductionOffline extends TempActivity{
     private final String TAG ="ActProductionOffline";
     private PreGlobal preGlobal;
     private ViewGlobal viewGlobal;

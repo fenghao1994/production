@@ -13,7 +13,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-
         android:theme="@style/AppTheme.Base">
         <receiver
             android:name=".receiver.MyReceiver"
@@ -31,19 +30,21 @@
         <activity
             android:name=".activities.login.ActLogin"
             android:label="@string/app_name"
-
             android:windowSoftInputMode="adjustPan|stateHidden">
-            <!-- <intent-filter>
+
+            <!--
+             <intent-filter>
                  <action android:name="android.intent.action.MAIN" />
 
                  <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>-->
+             </intent-filter>
+            -->
         </activity>
         <activity
-
             android:name=".activities.home.ActHome"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan|stateHidden">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -53,247 +54,263 @@
         <activity
             android:name=".activities.product.ActProduction"
             android:windowSoftInputMode="adjustPan|stateHidden">
-            <!--  <intent-filter>
+
+            <!--
+              <intent-filter>
                   <action android:name="android.intent.action.MAIN" />
 
                   <category android:name="android.intent.category.LAUNCHER" />
-              </intent-filter>-->
+              </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".activities.product.ActProduction2"
             android:windowSoftInputMode="adjustPan|stateHidden">
-            <!--  <intent-filter>
+
+            <!--
+              <intent-filter>
                   <action android:name="android.intent.action.MAIN" />
 
                   <category android:name="android.intent.category.LAUNCHER" />
-              </intent-filter>-->
+              </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".activities.product.ActInBox"
             android:windowSoftInputMode="adjustPan|stateHidden">
-            <!--  <intent-filter>
+
+            <!--
+              <intent-filter>
                   <action android:name="android.intent.action.MAIN" />
 
                   <category android:name="android.intent.category.LAUNCHER" />
-              </intent-filter>-->
+              </intent-filter>
+            -->
         </activity>
         <activity android:name=".activities.TestActivity" />
-        <!--消息中心-->
+        <!-- 消息中心 -->
         <activity
             android:name=".activities.messageCenter.ActMessageCenter"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--消息详情-->
+        <!-- 消息详情 -->
         <activity
             android:name=".activities.messageCenter.ActMessageDetail"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--异常判断页面-->
+        <!-- 异常判断页面 -->
         <activity
             android:name=".activities.exceptions.ActExceptionJudgementList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--//异常处理页面-->
+        <!-- //异常处理页面 -->
         <activity
             android:name=".activities.exceptions.ActExceptionJudgement"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--//工件选择页面-->
+        <!-- //工件选择页面 -->
         <activity
             android:name=".activities.selectors.ActGongJianSelector"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建刀具异常-->
+        <!-- 创建刀具异常 -->
         <activity
             android:name=".activities.exceptions.ActGenDaoJuException"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建工件异常-->
+        <!-- 创建工件异常 -->
         <activity
             android:name=".activities.exceptions.ActGenGongjianException"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建设备异常-->
+        <!-- 创建设备异常 -->
         <activity
             android:name=".activities.exceptions.ActGenEquException"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--刀具异常列表-->
+        <!-- 刀具异常列表 -->
         <activity
             android:name=".activities.exceptions.ActExceptionDaoJuList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--刀具异常处理-->
+        <!-- 刀具异常处理 -->
         <activity
             android:name=".activities.exceptions.ActDaoJuDeal"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--设备异常处理-->
+        <!-- 设备异常处理 -->
         <activity
             android:name=".activities.exceptions.ActEquDeal"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--工件异常处理-->
+        <!-- 工件异常处理 -->
         <activity
             android:name=".activities.exceptions.ActJiaGongDeal"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--设备异常列表-->
+        <!-- 设备异常列表 -->
         <activity
             android:name=".activities.exceptions.ActExceptionEquList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--加工异常列表-->
+        <!-- 加工异常列表 -->
         <activity
             android:name=".activities.exceptions.ActExceptionJiaGongList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--批次管理-->
+        <!-- 批次管理 -->
         <activity
             android:name=".activities.management.ActManagePiCi"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--添加批次-->
+        <!-- 添加批次 -->
         <activity
             android:name=".activities.management.ActCreatePiCi"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建箱子-->
+        <!-- 创建箱子 -->
         <activity
             android:name=".activities.product.ActCreateProductBox"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--装箱详情-->
+        <!-- 装箱详情 -->
         <activity
             android:name=".activities.product.ActInBoxDetail"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品抽检-->
+        <!-- 产品抽检 -->
         <activity
             android:name=".activities.check.ActCheckList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品抽检列表-->
+        <!-- 产品抽检列表 -->
         <activity
             android:name=".activities.check.ActCheckPrdList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品抽检详情处理-->
+        <!-- 产品抽检详情处理 -->
         <activity
             android:name=".activities.check.ActCheckPrdDetail"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--人员选择-->
+        <!-- 人员选择 -->
         <activity
             android:name=".activities.selectors.ActSelector"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--工件上线-->
+        <!-- 工件上线 -->
         <activity
             android:name=".activities.onOffLine.ActProductionOffline"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--工件下线-->
+        <!-- 工件下线 -->
         <activity
             android:name=".activities.onOffLine.ActProductionOnline"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--返工上线-->
+        <!-- 返工上线 -->
         <activity
             android:name=".activities.onOffLine.ActProductionBackOnline"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--生产报警管理-->
+        <!-- 生产报警管理 -->
         <activity
             android:name=".activities.alarm.ActAlarmManagement"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--工序安排列表-->
+        <!-- 工序安排列表 -->
         <activity
             android:name=".activities.arrangeProcedure.ActArrangeProList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建工序安排-->
+        <!-- 创建工序安排 -->
         <activity
             android:name=".activities.arrangeProcedure.ActCreatePro"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--编辑工序安排-->
+        <!-- 编辑工序安排 -->
         <activity
             android:name=".activities.arrangeProcedure.ActEditPro"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--刀具更换-->
+        <!-- 刀具更换 -->
         <activity
             android:name=".activities.deviceToolChange.ActDeviceToolChange"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--质量检测列表-->
+        <!-- 质量检测列表 -->
         <activity
             android:name=".activities.qualityCheck.ActQualityCheckList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--质量检测详情-->
+        <!-- 质量检测详情 -->
         <activity
             android:name=".activities.qualityCheck.ActQualityCheckDeal"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--工件维修-->
+        <!-- 工件维修 -->
         <activity
             android:name=".activities.repair.ActRepairList"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--毛坯入库申请-->
+        <!-- 毛坯入库申请 -->
         <activity
             android:name=".activities.storageRoom.ActApplyForMPStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--毛坯入库抽检-->
+        <!-- 毛坯入库抽检 -->
         <activity
             android:name=".activities.storageRoom.ActCheckForMPStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--毛坯入库审批-->
+        <!-- 毛坯入库审批 -->
         <activity
             android:name=".activities.storageRoom.ActApproveMPStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--详情处理页面-->
+        <!-- 详情处理页面 -->
         <activity
             android:name=".activities.storageRoom.ActStorageDetail"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建毛坯入库-->
+        <!-- 创建毛坯入库 -->
         <activity
             android:name=".activities.storageRoom.ActMPStorageCreate"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--毛坯领用(领用人)-->
+        <!-- 毛坯领用(领用人) -->
         <activity
             android:name=".activities.storageRoom.ActMaoPiReceiver"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--毛坯领用(毛坯管理人)-->
+        <!-- 毛坯领用(毛坯管理人) -->
         <activity
             android:name=".activities.storageRoom.ActMaoPiReceive"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--毛坯领用订单-->
+        <!-- 毛坯领用订单 -->
         <activity
             android:name=".activities.storageRoom.ActMaoPiReceiveCreate"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--辅料领用申请列表-->
+        <!-- 辅料领用申请列表 -->
         <activity
             android:name=".activities.storageRoom.ActMaterialReceive"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--辅料领用审批列表-->
+        <!-- 辅料领用审批列表 -->
         <activity
             android:name=".activities.storageRoom.ActMaterialApprove"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--辅料领用发货列表-->
+        <!-- 辅料领用发货列表 -->
         <activity
             android:name=".activities.storageRoom.ActMaterialSend"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建辅料领用订单-->
+        <!-- 创建辅料领用订单 -->
         <activity
             android:name=".activities.storageRoom.ActMaterialCreate"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--刀具领用申请列表-->
+        <!-- 刀具领用申请列表 -->
         <activity
             android:name=".activities.storageRoom.ActDeviceToolReceive"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--刀具领用审批列表-->
+        <!-- 刀具领用审批列表 -->
         <activity
             android:name=".activities.storageRoom.ActDeviceToolApprove"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--刀具领用发货列表-->
+        <!-- 刀具领用发货列表 -->
         <activity
             android:name=".activities.storageRoom.ActDeviceToolSend"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--创建刀具领用订单-->
+        <!-- 创建刀具领用订单 -->
         <activity
             android:name=".activities.storageRoom.ActDeviceToolReceiveCreate"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品入库清点-->
+        <!-- 产品入库清点 -->
         <activity
             android:name=".activities.storageRoom.ActCheckPrdStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品入库申请-->
+        <!-- 产品入库申请 -->
         <activity
             android:name=".activities.storageRoom.ActApplyForPrdStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品入库审批-->
+        <!-- 产品入库审批 -->
         <activity
             android:name=".activities.storageRoom.ActApprovePrdStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品入库确认-->
+        <!-- 产品入库确认 -->
         <activity
             android:name=".activities.storageRoom.ActConfirmPrdStorage"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!--产品入库详情-->
+        <!-- 产品入库详情 -->
         <activity
             android:name=".activities.storageRoom.ActApplyPrdDetail"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 段长查看工序详情 -->
+        <activity
+            android:name=".activities.count.ProductionCountActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".activities.count.ProductionCountMoreInfoActivity" />
+        <activity android:name=".activities.count.ProductionPeopleActivity"></activity>
     </application>
 
 </manifest>

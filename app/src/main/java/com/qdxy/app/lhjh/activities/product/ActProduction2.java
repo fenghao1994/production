@@ -864,7 +864,7 @@ public class ActProduction2 extends TempActivity {
 //                holder.getView(R.id.item_production2_cardview).setBackgroundResource(respProduction2.isSelected()?R.color.colorPrimaryDark:R.color.white);
 //                holder.setTextColor(R.id.item_production2_txv_num,R.color.temp_pink_color);
 //                holder.setTextColor(R.id.item_production2_txv_time,respProduction2.isSelected()?R.color.white:R.color.white);
-                holder.getView(R.id.item_production2_cardview).setBackgroundResource(respProduction2.isSelected()?R.drawable.shape_prd_selected:R.drawable.shape_prd_unselected);
+//                holder.getView(R.id.item_production2_cardview).setBackgroundResource(respProduction2.isSelected()?R.drawable.shape_prd_selected:R.drawable.shape_prd_unselected);
                 holder.setText(R.id.item_production2_txv_num,"产品编号："+respProduction2.getProductCode().replace(respProduction2.getProductionBatchCode(),""));
                 holder.setText(R.id.item_production2_txv_time, TextUtils.isEmpty(respProduction2.getCreationTime())?"":respProduction2.getCreationTime());
             }

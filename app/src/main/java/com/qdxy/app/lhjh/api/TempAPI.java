@@ -6,6 +6,8 @@ import com.qdxy.app.lhjh.activities.arrangeProcedure.RespArrangeProList;
 import com.qdxy.app.lhjh.activities.check.RespCheckPiCiList;
 import com.qdxy.app.lhjh.activities.check.RespCheckPrdDetail;
 import com.qdxy.app.lhjh.activities.check.RespCheckPrdList;
+import com.qdxy.app.lhjh.activities.count.RespCountList;
+import com.qdxy.app.lhjh.activities.count.RespCountProductionList;
 import com.qdxy.app.lhjh.activities.exceptions.RespExceptionJudgement;
 import com.qdxy.app.lhjh.activities.exceptions.RespExceptionJudgementList;
 import com.qdxy.app.lhjh.activities.exceptions.RespExpList;
@@ -1058,4 +1060,22 @@ public interface TempAPI {
     @FormUrlEncoded
     @POST(AppConfig.BASE_URL + "roughcast/apply/randomCheck")
     Call<TempResponse> applyRandomCheck(@Field("id") int id, @Field("unqualifiedCount") int unqualifiedCount);
+
+    /**
+     * 生产统计中获取分管列表的人
+     * @param page
+     * @return
+     */
+    @GET(AppConfig.BASE_URL + "user/list/manager")
+    Call<RespCountList> getListManager(@Query("page") int page);
+
+    /**
+     * 获取生产统计
+     * @param startTime
+     * @param endTime
+     * @param userId
+     * @return
+     */
+    @GET(AppConfig.BASE_URL + "/machiningParts/getMachiningCountTotal")
+    Call<RespCountProductionList> getMachiningCountTotal(@Query("begin") String startTime, @Query("end") String endTime, @Query("userid") int userId);
 }

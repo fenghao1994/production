@@ -8,34 +8,6 @@
 
     <include layout="@layout/toolbar_layout" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90px"
-        android:layout_marginTop="40px"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="190px"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:text="操作员:" />
-
-        <TextView
-            android:id="@+id/actcreat_pro_check_index0"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/selector_button_selector"
-            android:drawablePadding="8dp"
-            android:drawableRight="@mipmap/icon_input_triangle"
-            android:gravity="center_vertical"
-            android:hint="请选择操作员"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:textColorHint="@color/gray" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +37,6 @@
             android:paddingRight="16dp"
             android:textColorHint="@color/gray" />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,8 +67,40 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:textColorHint="@color/gray"
-             />
+            />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="40px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="190px"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="操作员:" />
+
+        <TextView
+            android:id="@+id/actcreat_pro_check_index0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_button_selector"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/icon_input_triangle"
+            android:gravity="center_vertical"
+            android:hint="请选择操作员"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColorHint="@color/gray" />
+    </LinearLayout>
+
+
+
 
 
     <android.support.v7.widget.AppCompatButton
