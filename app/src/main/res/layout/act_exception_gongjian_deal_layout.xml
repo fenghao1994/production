@@ -296,6 +296,20 @@
                                 android:text="返工"
                                 android:textColor="@color/temp_baseTextColor_565656" />
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:id="@+id/act_prd_check_checkbox6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="机废"
+                                android:textColor="@color/temp_baseTextColor_565656" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>

@@ -97,15 +97,7 @@ public class ExpandableListViewaAdapter extends BaseExpandableListAdapter {
             titleHolder.number = (TextView) convertView.findViewById(R.id.production_count);
             titleHolder.img = (ImageView) convertView.findViewById(R.id.title_img);
             titleHolder.layout = (RelativeLayout) convertView.findViewById(R.id.item_production_count_layout);
-
-            ExpandableListView.LayoutParams params = new ExpandableListView.LayoutParams(ExpandableListView.LayoutParams.MATCH_PARENT, 200);//设置宽度和高度
-            titleHolder.layout.setLayoutParams(params);
-            titleHolder.name.setText(titleList.get(groupPosition));
-            titleHolder.number.setText(chileList.get(groupPosition).size() + "");
-//            titleHolder.img.setVisibility(View.GONE);
-
             convertView.setTag(titleHolder);
-            return convertView;
         } else {
             titleHolder = (TitleHolder) convertView.getTag();
         }
